@@ -25,11 +25,17 @@ This repository contains Terraform code to provision and manage AWS infrastructu
 
 2. Create an S3 bucket for Terraform backend and a DynamoDB table for state locking.
 
-3. Initialize Terraform backend: terraform init --reconfigure
+3. Initialize Terraform backend:
+   ```bash
+   terraform init
 
-4. Apply the Terraform configuration: terraform apply
+5. Apply the Terraform configuration: 
+   ```bash
+   terraform apply
 
-5. When no longer needed, destroy the infrastructure: terraform destroy
+6. When no longer needed, destroy the infrastructure: 
+   ```bash
+   terraform destroy
 
 # Notes
 Make sure to enable versioning on your S3 bucket to protect the Terraform state file.
